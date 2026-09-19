@@ -4,6 +4,8 @@ A touch-configurable kinetic particle toy for the Waveshare ESP32-S3-Touch-AMOLE
 
 Particles respond to the onboard QMI8658 accelerometer, collide and settle within the round 466 x 466 CO5300 AMOLED display. The setup wizard controls seed color, color variation, particle count, and gravity sensitivity. Touch the running simulation to return to setup and recalibrate.
 
+![ParticleGravity setup and simulation](emulator/particlegravity-demo.gif)
+
 ## Hardware
 
 - Waveshare ESP32-S3-Touch-AMOLED-1.75
