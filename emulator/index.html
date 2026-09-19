@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0c">
+  <title>ParticleGravity Emulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="workbench">
+    <section class="device-stage" aria-label="ParticleGravity device emulator">
+      <div class="device">
+        <div class="bezel">
+          <canvas id="display" width="466" height="466" aria-label="466 by 466 pixel touch display"></canvas>
+        </div>
+        <div class="device-mark">PARTICLE GRAVITY</div>
+      </div>
+    </section>
+
+    <aside class="controls" aria-label="Emulator controls">
+      <header>
+        <p class="eyebrow">ESP32-S3 / CO5300</p>
+        <h1>Device emulator</h1>
+        <span id="status">Setup wizard</span>
+      </header>
+
+      <section class="control-section">
+        <div class="section-heading">
+          <h2>Gravity</h2>
+          <output id="gravity-readout">X 0.00&nbsp;&nbsp;Y 0.00</output>
+        </div>
+        <div id="tilt-pad" class="tilt-pad" role="slider" tabindex="0" aria-label="Device tilt" aria-valuemin="-1" aria-valuemax="1" aria-valuenow="0">
+          <div class="axis axis-x"></div>
+          <div class="axis axis-y"></div>
+          <div id="tilt-knob" class="tilt-knob"></div>
+        </div>
+        <p class="hint">Drag to tilt. Release to hold. Double-click to level.</p>
+      </section>
+
+      <section class="control-section actions">
+        <button id="level-button" type="button">
+          <span aria-hidden="true">◎</span>
+          Level
+        </button>
+        <button id="restart-button" type="button">
+          <span aria-hidden="true">↻</span>
+          Restart
+        </button>
+      </section>
+
+      <section class="specs" aria-label="Display specifications">
+        <span>466 × 466 px</span>
+        <span>RGB565</span>
+        <span>60 Hz</span>
+      </section>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
