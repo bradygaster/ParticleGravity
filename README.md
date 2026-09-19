@@ -63,6 +63,8 @@ Serial telemetry is emitted at 115200 baud approximately once per second.
 
 ## Browser emulator
 
+![ParticleGravity browser emulator](emulator/particlegravity-emulator.png)
+
 Open [`emulator/index.html`](emulator/index.html) in a browser to run the visual emulator without hardware. It uses the display's native 466 x 466 coordinate system, RGB565 colors, Arduino bitmap font, wizard touch targets, and particle physics from the firmware.
 
 Drag the gravity control to emulate device tilt. Arrow keys adjust it in small steps, Shift+Arrow uses larger steps, and `0` returns it to level.
